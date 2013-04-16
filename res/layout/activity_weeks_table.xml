@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".WeeksTable" >
+
+    <!--
+    320dp: a typical phone screen (240x320 ldpi, 320x480 mdpi, 480x800 hdpi, etc).  
+	480dp: a tweener tablet like the Streak (480x800 mdpi).  
+	600dp: a 7” tablet (600x1024 mdpi).  
+	720dp: a 10” tablet (720x1280 mdpi, 800x1280 mdpi, etc).
+    -->
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:contentDescription="leiste"
+        android:src="@drawable/leiste_tct" />
+
+    <TextView
+        android:id="@+id/Header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:text="Hier wird das Ergebnis des Webservices angezeigt:"
+        android:textIsSelectable="false"
+        android:textSize="20sp" >
+    </TextView>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TableLayout
+                android:id="@+id/objects"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:shrinkColumns="*"
+                android:stretchColumns="*" >
+
+                <TableRow
+                    android:id="@+id/Body5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/ResponseTextD"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="50dp"
+                        android:layout_marginTop="50dp"
+                        android:ems="10"
+                        android:text="STATUS: "
+                        android:textIsSelectable="false"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/ResponseText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="50dp"
+                        android:layout_marginTop="50dp"
+                        android:ems="10"
+                        android:textIsSelectable="false"
+                        android:textSize="20sp" />
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/objects"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/blue" >
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

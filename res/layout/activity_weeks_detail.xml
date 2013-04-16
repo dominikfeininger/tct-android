@@ -1,0 +1,184 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".WeeksDetail" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:contentDescription="leiste"
+        android:src="@drawable/leiste_tct" />
+
+    <TextView
+        android:id="@+id/TableHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:text="DATEN:"
+        android:textIsSelectable="false"
+        android:textSize="50sp" >
+    </TextView>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin" >
+
+            <TableLayout
+                android:id="@+id/objects"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:shrinkColumns="*"
+                android:stretchColumns="*" >
+
+                <TableRow
+                    android:id="@+id/Body1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/idText"
+                        android:text="ID:"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:typeface="serif" >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="50dp"
+                        android:ems="10"
+                        android:textIsSelectable="false"
+                        android:textSize="20sp" >
+                    </TextView>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/Body2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/nameText"
+                        android:text="NAME:"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:typeface="serif" >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="50dp"
+                        android:ems="10"
+                        android:textIsSelectable="false"
+                        android:textSize="20sp" >
+                    </TextView>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/Body3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/focus01Text"
+                        android:text="FOCUS02:"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:typeface="serif" >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/focus01"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="50dp"
+                        android:ems="10"
+                        android:textIsSelectable="false"
+                        android:textSize="20sp" >
+                    </TextView>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/Body4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/focus02Text"
+                        android:text="FOCUS02:"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:typeface="serif" >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/focus02"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="50dp"
+                        android:ems="10"
+                        android:textIsSelectable="false"
+                        android:textSize="20sp" >
+                    </TextView>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/Body5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/stateText"
+                        android:text="STATE:"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:typeface="serif" >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/state"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="50dp"
+                        android:ems="10"
+                        android:textIsSelectable="false"
+                        android:textSize="20sp" >
+                    </TextView>
+                </TableRow>
+            </TableLayout>
+
+            <Button
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:onClick="back"
+                android:text="back" >
+            </Button>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
